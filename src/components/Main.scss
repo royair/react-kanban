@@ -1,0 +1,55 @@
+@import '../css/colors.scss';
+
+.main {
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
+
+  menu {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: $side-menu-width;
+    background-color: $white;
+    box-shadow: 4px 3px 20px #7d8cab36;
+    color: $grey;
+    font-size: 14px;
+    overflow-y: auto;
+
+    ul {
+      text-align: center;
+
+      li {
+        padding: 25px 0;
+        cursor: pointer;
+
+        .caption {
+          margin-top: 11px;
+        }
+
+        &.selected {
+          $borderWidth: 4;
+          border: $borderWidth + px solid green;
+          border-top: 0;
+          border-right: 0;
+          border-bottom: 0;
+          border-image-source: linear-gradient($light-purple, $light-blue);
+          border-image-slice: $borderWidth;
+          color: $dark-grey;
+
+          .caption {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .settings {
+      text-align: center;
+      padding: 26px 0;
+
+      .caption {
+        margin-top: 11px;
+      }
+    }
+  }
+}

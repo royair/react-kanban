@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import "colors";
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: $light-grey;
+  font-family: 'Roboto', sans-serif;
+  color: $dark-purple;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.fancy-scrollbar {
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-button {
+  }
+
+  &::-webkit-scrollbar-track {
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    background: rgba(9, 45, 66, .08);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $dark-grey;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-corner {
+  }
+
+  &::-webkit-resizer {
+  }
+}
+
+
+
+
