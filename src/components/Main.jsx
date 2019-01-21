@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import Icon from './Icon';
 
-import Board from './Board';
+import Boards from './Boards';
 
 import './Main.scss';
 
 class Main extends Component {
   render() {
     return (
-      <div className="main">
+      <div className="Main">
         <menu className="flex flex-direction-column justify-content-space-between fancy-scrollbar">
           <ul>
             <li>
@@ -16,7 +16,7 @@ class Main extends Component {
               <div className="caption">Manage</div>
             </li>
             <li className="selected">
-              <Icon name="Boards"/>
+              <Icon name="Boards" fill="#878fdc"/>
               <div className="caption">Boards</div>
             </li>
             <li>
@@ -34,7 +34,7 @@ class Main extends Component {
             <div className="caption">Settings</div>
           </div>
         </menu>
-        <Board/>
+        <Boards/>
       </div>
     )
   }

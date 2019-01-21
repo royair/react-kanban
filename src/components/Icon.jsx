@@ -10,7 +10,8 @@ export function Icon({ name, ...rest }) {
 
 const SVG = ({ children, ...restProps }) => (
   <svg xmlns="http://www.w3.org/2000/svg"
-       {...restProps}>{children}</svg>);
+       {...restProps}
+       className="icon">{children}</svg>);
 
 const Manage = ({ fill, ...restProps }) => {
   return (

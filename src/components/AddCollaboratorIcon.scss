@@ -1,0 +1,14 @@
+@import '../css/colors.scss';
+
+.AddCollaboratorIcon {
+  $diameter: 40px;
+
+  display: flex;
+  justify-content: center;
+  width: $diameter;
+  height: $diameter;
+  border-radius: $diameter / 2;
+  background-color: $light-grey;
+  border: 1.3333333333333333px dashed #9898ae;
+  cursor: pointer;
+}

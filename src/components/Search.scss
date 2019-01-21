@@ -1,0 +1,25 @@
+@import '../css/colors';
+
+.Search {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 23px;
+
+  .icon {
+    padding: 0 11px 0 0;
+  }
+
+  input {
+    color: inherit;
+    font-size: inherit;
+    width: 250px;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      color: inherit;
+    }
+  }
+}

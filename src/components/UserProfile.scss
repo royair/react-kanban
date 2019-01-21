@@ -1,0 +1,29 @@
+@import '../css/colors';
+
+.UserProfile {
+
+  ul {
+    display: flex;
+    height: 100%;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      border-left: 1px solid $white;
+
+      &:first-child {
+        border-left: none;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    .username {
+      white-space: nowrap;
+      margin-right: 22px;
+    }
+  }
+}

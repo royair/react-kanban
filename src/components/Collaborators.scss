@@ -1,0 +1,15 @@
+@import '../css/colors.scss';
+
+.Collaborators {
+  ul {
+    display: flex;
+
+    li {
+      padding: 0 5px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
