@@ -8,6 +8,6 @@
   width: $diameter;
   height: $diameter;
   background-color: $grey;
-  border-radius: $diameter/2;
+  border-radius: ($diameter/ 2) + 1;
   border: 1px solid lighten($dark-grey, 25%);
 }
