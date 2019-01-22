@@ -10,7 +10,7 @@ class Boards extends Component {
   render() {
     return (
       <div className="Boards">
-        <div className="flex justify-content-space-between">
+        <div className="flex justify-content-space-between align-items-center">
           <BoardPicker/>
           <Collaborators/>
         </div>
