@@ -9,9 +9,6 @@ class Board extends Component {
     return (
       <div className="Board fancy-scrollbar">
         <Lists/>
-        <Lists/>
-        <Lists/>
-        <Lists/>
       </div>
     )
   }

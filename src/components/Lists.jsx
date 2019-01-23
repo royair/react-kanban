@@ -9,6 +9,9 @@ class Lists extends Component {
     return (
       <div className="Lists">
         <List/>
+        <List/>
+        <List/>
+        <List/>
       </div>
     )
   }
