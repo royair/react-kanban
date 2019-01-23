@@ -1,5 +1,9 @@
 @import '../css/colors.scss';
 
 .Board {
-
+  display: flex;
+  flex-grow: 1;
+  padding-bottom: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
 }

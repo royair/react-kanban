@@ -1,6 +1,8 @@
 @import '../css/colors.scss';
 
 .Boards {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  padding: 29px $margin-right-width 50px $margin-left-width;
+  padding: 29px $margin-right-width 25px $margin-left-width;
 }

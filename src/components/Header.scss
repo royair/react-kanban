@@ -2,7 +2,7 @@
 
 .Header {
   display: flex;
-  height: 60px;
+  flex-basis: 60px;
   flex-grow: 0;
   flex-shrink: 0;
   color: $white;

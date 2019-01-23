@@ -2,11 +2,11 @@
 
 .Card {
   padding: 10px;
-  background-color: #ffffff;
+  background-color: $white;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 10px;
 
-  .label {
+  >.label {
     padding: 21px 0;
   }
 
@@ -33,6 +33,9 @@
 
     .assignees {
     }
+  }
+
+  &:first-child{
 
   }
 }

@@ -15,10 +15,16 @@ class List extends Component {
             <Icon name="MoreVert" fill="#7a838f"></Icon>
           </div>
         </div>
-        <div className="main">
+        <div className="main fancy-scrollbar">
           <Card/>
           <Card/>
           <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+
         </div>
         <div className="footer">
 

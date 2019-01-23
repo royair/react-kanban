@@ -7,7 +7,10 @@ import './Board.scss';
 class Board extends Component {
   render() {
     return (
-      <div className="Board">
+      <div className="Board fancy-scrollbar">
+        <Lists/>
+        <Lists/>
+        <Lists/>
         <Lists/>
       </div>
     )
