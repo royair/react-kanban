@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/react-kanban/static/js/runtime~main.ec1dba4c.js"
   },
   {
-    "revision": "d82091e31d0742b12b29",
-    "url": "/react-kanban/static/js/main.d82091e3.chunk.js"
+    "revision": "0d90cfda7c8af5e43e2f",
+    "url": "/react-kanban/static/js/main.0d90cfda.chunk.js"
   },
   {
     "revision": "5ab5063872c285247579",
     "url": "/react-kanban/static/js/1.5ab50638.chunk.js"
   },
   {
-    "revision": "d82091e31d0742b12b29",
-    "url": "/react-kanban/static/css/main.f76d4a8d.chunk.css"
+    "revision": "0d90cfda7c8af5e43e2f",
+    "url": "/react-kanban/static/css/main.34ae6f55.chunk.css"
   },
   {
-    "revision": "7f4098c49b294402a206712225cea925",
+    "revision": "e102af78bc5ccdb11eb6d5eba55bf726",
     "url": "/react-kanban/index.html"
   }
 ];
