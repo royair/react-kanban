@@ -11,7 +11,7 @@ class Boards extends Component {
     return (
       <div className="Boards">
         <div
-          className="flex justify-content-space-between align-items-center flex-shrink-0">
+          className="header">
           <BoardPicker/>
           <Collaborators/>
         </div>

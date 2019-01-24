@@ -4,6 +4,14 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 29px $margin-right-width 25px $margin-left-width;
+  padding: 29px 0 25px $margin-left-width;
   overflow-x: hidden;
+
+  .header {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: $margin-right-width;
+  }
 }
