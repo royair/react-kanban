@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { observer } from 'mobx-react';
 import Header from './components/Header';
 import Main from './components/Main';
 import './App.css';
@@ -14,4 +15,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default observer(App);

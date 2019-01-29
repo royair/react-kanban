@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import "colors";
 
+textarea, div, input, button {
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+}
+
 html, body, #root {
   height: 100%;
 }
@@ -10,6 +18,25 @@ body {
   font-family: 'Roboto', sans-serif;
   color: $dark-purple;
 }
+
+button {
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.1s ease-in-out;
+
+  &.primary {
+    background-color: $light-blue;
+    padding: 6px 12px;
+    box-shadow: 0 1px 0 0 darken($light-blue, 10%);
+    border: none;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($light-blue, 5%);
+    }
+  }
+}
+
 
 .text-right {
   text-align: right;

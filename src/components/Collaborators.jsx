@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import ProfileCircle from './ProfileCircle';
 import './Collaborators.scss';
-import AddCollaboratorIcon from "./AddCollaboratorIcon";
+import AddCollaboratorIcon from "./card/AddCollaboratorIcon";
 
 class Collaborators extends Component {
   render() {

@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
-import Icon from './Icon';
+import { inject, observer } from 'mobx-react';
 
-import Boards from './Boards';
+import Icon from './Icon';
+import Kanban from './kanban/Kanban';
 
 import './Main.scss';
 
 class Main extends Component {
   render() {
+    let { kanban } = this.props.store;
+
     return (
       <div className="Main">
-        <menu className="flex flex-direction-column justify-content-space-between fancy-scrollbar">
+        <menu
+          className="flex flex-direction-column justify-content-space-between fancy-scrollbar">
           <ul>
             <li>
               <Icon name="Manage"/>
@@ -34,10 +38,10 @@ class Main extends Component {
             <div className="caption">Settings</div>
           </div>
         </menu>
-        <Boards/>
+        <Kanban kanban={kanban}/>
       </div>
     )
   }
 }
 
-export default Main;
+export default inject('store')(observer(Main));

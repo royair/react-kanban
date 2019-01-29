@@ -8,10 +8,17 @@ export function Icon({ name, ...rest }) {
   );
 };
 
-const SVG = ({ children, ...restProps }) => (
-  <svg xmlns="http://www.w3.org/2000/svg"
-       {...restProps}
-       className="icon">{children}</svg>);
+const SVG = ({ children, width, ...restProps }) => {
+  const widthPx = width + 'px';
+
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width={widthPx}
+         {...restProps}
+         className="icon">{children}</svg>
+  )
+
+};
 
 const Manage = ({ fill, ...restProps }) => {
   return (
@@ -112,6 +119,23 @@ const Plus = ({ fill, ...restProps }) => {
   )
 };
 
+const CircleWithPlus = ({ fill, width, ...restProps }) => {
+  let style = {
+    display: 'flex',
+    justifyContent: 'center',
+    width: width * 1.7 + 'px',
+    height: width * 1.7 + 'px',
+    borderRadius: (width * 1.7) / 2 + 1 + 'px',
+    border: `1px solid ${fill}`,
+  };
+
+  return (
+    <div style={style}>
+      <Plus fill={fill} width={width} {...restProps} />
+    </div>
+  )
+};
+
 const Person = ({ fill, ...restProps }) => {
   return (
     <SVG style={{ fill }}
@@ -167,6 +191,17 @@ const Notification = ({ fill, ...restProps }) => {
   )
 };
 
+const Clear = ({ fill, ...restProps }) => {
+  return (
+    <SVG style={{ fill }}
+         {...restProps}
+         viewBox="0 0 14 14">
+      <path
+        d="M14,1.41,12.59,0,7,5.59,1.41,0,0,1.41,5.59,7,0,12.59,1.41,14,7,8.41,12.59,14,14,12.59,8.41,7Z"/>
+    </SVG>
+  )
+};
+
 // map icons to obj to dynamically load by name
 const icons = {
   Manage,
@@ -183,6 +218,8 @@ const icons = {
   Comment,
   Attachment,
   Notification,
+  Clear,
+  CircleWithPlus,
 };
 
 // set default props to some icons
@@ -254,6 +291,16 @@ Attachment.defaultProps = {
 Notification.defaultProps = {
   fill: '#fff',
   width: 14
+};
+
+Clear.defaultProps = {
+  fill: '#fff',
+  width: 14
+};
+
+CircleWithPlus.defaultProps = {
+  fill: '#fff',
+  width: 10
 };
 
 export default Icon;

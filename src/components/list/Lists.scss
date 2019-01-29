@@ -1,0 +1,15 @@
+@import '../../css/colors';
+
+.Lists {
+  margin-top: 30px;
+  padding-left: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.lists-wrapper {
+  display: flex;
+  flex-grow: 1;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
